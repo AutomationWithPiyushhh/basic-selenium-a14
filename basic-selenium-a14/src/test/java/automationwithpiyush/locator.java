@@ -11,18 +11,16 @@ public class locator {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		
-		driver.get("https://automationwithpiyush.vercel.app/");
-		
-		driver.findElement(By.xpath("//h4[text()='Locators']")).click();
+
+		driver.get("https://automationwithpiyush.vercel.app/direct.html");
 
 		driver.findElement(By.id("email")).sendKeys("admin");
-		driver.findElement(By.id("password")).sendKeys("admin@123");
-		
+		driver.findElement(By.name("pass")).sendKeys("admin@123");
+
 		driver.findElement(By.id("terms_checkbox")).click();
-		
+
 		driver.findElement(By.cssSelector("button[type='submit']")).submit();
-		
+
 		Thread.sleep(3000);
 		driver.quit();
 	}

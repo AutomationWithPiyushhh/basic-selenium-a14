@@ -10,7 +10,7 @@ public class AWP_sync {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 		driver.get("https://automationwithpiyush.vercel.app/synchronization.html");
 		
