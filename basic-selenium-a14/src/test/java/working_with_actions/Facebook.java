@@ -20,6 +20,13 @@ public class Facebook {
 		Actions act = new Actions(driver);
 		
 		WebElement pwd = driver.findElement(By.id("pass"));
+		pwd.sendKeys("1234567");
+		Thread.sleep(3000);
+		pwd.clear();
+		Thread.sleep(3000);
+		pwd.sendKeys("1234567");
+		Thread.sleep(10000);
+		
 		
 //		act.sendKeys("admin@123" + Keys.TAB + "123456789" + Keys.ENTER).build().perform();
 		
